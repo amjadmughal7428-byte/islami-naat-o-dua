@@ -47,10 +47,12 @@ class PlaybackService : Service() {
         return START_NOT_STICKY
     }
 
-    private fun ensurePlayer(): MediaPlayer {
+    // MediaPlayer.create can return null if the audio cannot be decoded —
+    // never crash the app for it; playback just stays unavailable.
+    private fun ensurePlayer(): MediaPlayer? {
         var p = player
         if (p == null) {
-            p = MediaPlayer.create(this, R.raw.maula_ya_salli_duff)
+            p = MediaPlayer.create(this, R.raw.maula_ya_salli_duff) ?: return null
             p.setOnCompletionListener {
                 pause()
                 stopForeground(true)
@@ -61,12 +63,12 @@ class PlaybackService : Service() {
     }
 
     fun toggle() {
-        val p = ensurePlayer()
+        val p = ensurePlayer() ?: return
         if (p.isPlaying) pause() else play()
     }
 
     fun play() {
-        val p = ensurePlayer()
+        val p = ensurePlayer() ?: return
         if (!p.isPlaying) {
             p.start()
             startForeground(NOTIF_ID, buildNotification(true))

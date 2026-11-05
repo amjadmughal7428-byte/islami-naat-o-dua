@@ -29,7 +29,7 @@
     <string name="namaz_button">View Timings</string>
     <string name="about">About</string>
     <string name="about_title">About This App</string>
-    <string name="about_text">Islami Naat o Dua\n\nNaat: "Maula Ya Salli Wa Sallim" (Duff Only) by Aqiib Farid — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n\nVersion 2.1</string>
+    <string name="about_text">Islami Naat o Dua\n\nNaat: "Maula Ya Salli Wa Sallim" (Duff Only) by Aqiib Farid — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n\nVersion 2.2</string>
 
     <!-- REPLACE WITH REAL IDS FROM AMJAD'S ADMOB ACCOUNT BEFORE PRODUCTION UPLOAD.
          Current values are Google's official TEST ad unit IDs. -->

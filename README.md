@@ -12,9 +12,9 @@ Package: `com.islamicstories.naatdua` · minSdk 24 · targetSdk 34.
 
 ## Release
 
-The released APK is **v2.1** (versionCode 3) — see
+The released APK is **v2.2** (versionCode 4) — see
 [Releases](https://github.com/amjadmughal7428-byte/islami-naat-o-dua/releases).
-Download `app-release.apk` from the v2.1 release and install it on Android.
+Download `app-release.apk` from the v2.2 release and install it on Android.
 
 ## Build from source
 

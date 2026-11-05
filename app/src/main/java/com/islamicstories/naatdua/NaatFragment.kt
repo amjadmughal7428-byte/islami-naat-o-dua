@@ -15,15 +15,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 
 class NaatFragment : Fragment() {
 
     private var service: PlaybackService? = null
     private var bound = false
     private val handler = Handler(Looper.getMainLooper())
-    private var adView: AdView? = null
     private lateinit var seekBar: SeekBar
     private lateinit var btnPlay: Button
     private lateinit var tvTime: TextView
@@ -66,9 +63,6 @@ class NaatFragment : Fragment() {
         seekBar = view.findViewById(R.id.seekbar)
         btnPlay = view.findViewById(R.id.btn_play)
         tvTime = view.findViewById(R.id.tv_time)
-
-        adView = view.findViewById<AdView>(R.id.adView)
-        adView?.loadAd(AdRequest.Builder().build())
 
         btnPlay.setOnClickListener {
             val ctx = activity ?: return@setOnClickListener
@@ -121,20 +115,8 @@ class NaatFragment : Fragment() {
         return String.format("%d:%02d", s / 60, s % 60)
     }
 
-    override fun onPause() {
-        super.onPause()
-        adView?.pause()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        adView?.resume()
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         handler.removeCallbacks(updater)
-        adView?.destroy()
-        adView = null
     }
 }

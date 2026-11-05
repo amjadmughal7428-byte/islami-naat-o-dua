@@ -40,7 +40,13 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        MobileAds.initialize(this) {}
+        // Ads are optional: if AdMob fails on this device (e.g. no Play
+        // Services), the app must still open — never crash the launch.
+        try {
+            MobileAds.initialize(this) {}
+        } catch (e: Exception) {
+            // Ads unavailable; continue without them.
+        }
 
         tabNaat = findViewById(R.id.tab_naat)
         tabTasbeeh = findViewById(R.id.tab_tasbeeh)
