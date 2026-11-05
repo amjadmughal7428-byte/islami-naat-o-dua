@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/naat_section_title"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_rounded"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/naat_title"
+                android:textColor="@color/accent_dark"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/naat_artist"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_primary"
+                android:text="@string/play"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_medium" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0:00 / 0:00"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/naat_bg_note"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</ScrollView>

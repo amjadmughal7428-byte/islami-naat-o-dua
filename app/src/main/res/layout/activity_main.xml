@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/tab_bg"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tab_naat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="@string/tab_naat"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/tab_pill_idle"
+            android:textColor="@color/tab_idle_text" />
+
+        <TextView
+            android:id="@+id/tab_tasbeeh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="@string/tab_tasbeeh"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/tab_pill_idle"
+            android:textColor="@color/tab_idle_text" />
+
+        <TextView
+            android:id="@+id/tab_prayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="@string/tab_prayer"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/tab_pill_idle"
+            android:textColor="@color/tab_idle_text" />
+    </LinearLayout>
+</LinearLayout>

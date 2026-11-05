@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.islamicstories.naatdua">
+
+    <!-- Needed for Google AdMob ads -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Background naat playback -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+
+        <!-- AdMob App ID (TEST id — REPLACE WITH REAL ID FROM AMJAD'S ADMOB ACCOUNT BEFORE PRODUCTION UPLOAD) -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PlaybackService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+        <!-- LIB-MANIFEST-ENTRIES: merged <activity>/<service>/<provider> entries from AAR manifests go here -->
+    </application>
+
+</manifest>

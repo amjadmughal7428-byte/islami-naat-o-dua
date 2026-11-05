@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="green_dark">#0B6E4F</color>
+    <color name="green">#12805C</color>
+    <color name="gold">#C9A227</color>
+    <color name="cream">#FFF8E7</color>
+    <color name="ink">#1E2A24</color>
+    <!-- Semantic (day) -->
+    <color name="bg_screen">#FFF8E7</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="text_primary">#1E2A24</color>
+    <color name="text_secondary">#5A6B62</color>
+    <color name="tab_bg">#FFFFFF</color>
+    <color name="accent">#12805C</color>
+    <color name="accent_dark">#0B6E4F</color>
+    <color name="tab_active_text">#FFFFFF</color>
+    <color name="tab_idle_text">#5A6B62</color>
+    <color name="tab_idle_bg">#EDE7D6</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Islami Naat o Dua</string>
+    <string name="tab_naat">Naat</string>
+    <string name="tab_dua">Duas</string>
+    <string name="tab_tasbeeh">Tasbeeh</string>
+    <string name="tab_prayer">Prayer</string>
+    <string name="tasbeeh_title">Tasbeeh Counter</string>
+    <string name="tap_hint">Tap the circle to count</string>
+    <string name="choose_dhikr">Choose Dhikr</string>
+    <string name="naat_section_title">Naat</string>
+    <string name="naat_bg_note">The naat keeps playing even if you leave the app.</string>
+    <string name="qibla_title">Qibla Direction</string>
+    <string name="qibla_intro">Which way to face for prayer depends on where you are in the world:</string>
+    <string name="qibla_pk">Pakistan / India / Bangladesh: face West.</string>
+    <string name="qibla_na">North America (USA / Canada): face North-East.</string>
+    <string name="qibla_sa">South Africa: face North.</string>
+    <string name="qibla_eu">Europe: face South-East.</string>
+    <string name="naat_title">Maula Ya Salli Wa Sallim (Duff Only)</string>
+    <string name="naat_artist">Aqiib Farid</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="dua_heading">Daily Duas</string>
+    <string name="tasbeeh_tap">Tap</string>
+    <string name="tasbeeh_reset">Reset</string>
+    <string name="tasbeeh_hint">Each tap counts one tasbeeh</string>
+    <string name="namaz_heading">Prayer Times</string>
+    <string name="namaz_text">Prayer times differ from city to city. Tap the button below to see the correct times for your city — your phone browser will open.</string>
+    <string name="namaz_button">View Timings</string>
+    <string name="about">About</string>
+    <string name="about_title">About This App</string>
+    <string name="about_text">Islami Naat o Dua\n\nNaat: "Maula Ya Salli Wa Sallim" (Duff Only) by Aqiib Farid — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n\nVersion 2.1</string>
+
+    <!-- REPLACE WITH REAL IDS FROM AMJAD'S ADMOB ACCOUNT BEFORE PRODUCTION UPLOAD.
+         Current values are Google's official TEST ad unit IDs. -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

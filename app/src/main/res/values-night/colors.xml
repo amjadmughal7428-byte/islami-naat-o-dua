@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Semantic (night) -->
+    <color name="bg_screen">#0F1F18</color>
+    <color name="bg_card">#182B23</color>
+    <color name="text_primary">#EDF3EE</color>
+    <color name="text_secondary">#9DB0A6</color>
+    <color name="tab_bg">#182B23</color>
+    <color name="accent">#2BBF8A</color>
+    <color name="accent_dark">#0B6E4F</color>
+    <color name="tab_active_text">#0F1F18</color>
+    <color name="tab_idle_text">#9DB0A6</color>
+    <color name="tab_idle_bg">#24382F</color>
+    <!-- Brand (same) -->
+    <color name="green_dark">#0B6E4F</color>
+    <color name="green">#12805C</color>
+    <color name="gold">#C9A227</color>
+    <color name="cream">#FFF8E7</color>
+    <color name="ink">#1E2A24</color>
+</resources>

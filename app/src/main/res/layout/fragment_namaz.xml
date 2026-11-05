@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/namaz_heading"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_rounded"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/namaz_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_namaz"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_primary"
+                android:text="@string/namaz_button"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_rounded"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qibla_title"
+                android:textColor="@color/accent_dark"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/qibla_intro"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/qibla_pk"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/qibla_na"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/qibla_sa"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/qibla_eu"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</ScrollView>
